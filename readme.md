@@ -1,12 +1,53 @@
-# LocalizationHelper
+<p align="center">
+    <a href="https://www.awes.io/?utm_source=github&utm_medium=repository" target="_blank" rel="noopener noreferrer">
+        <img width="100" src="https://static.awes.io/promo/Logo_sign_color.svg" alt="Awes.io logo">
+    </a>
+</p>
 
-[![Coverage report](https://repo.pkgkit.com/4GBWO/awes-io/localization-helper/badges/master/coverage.svg)](https://www.awes.io/)
-[![Build status](https://repo.pkgkit.com/4GBWO/awes-io/localization-helper/badges/master/build.svg)](https://www.awes.io/)
-[![Composer Ready](https://www.pkgkit.com/4GBWO/awes-io/localization-helper/status.svg)](https://www.awes.io/)
-[![Downloads](https://www.pkgkit.com/4GBWO/awes-io/localization-helper/downloads.svg)](https://www.awes.io/)
-[![Last version](https://www.pkgkit.com/4GBWO/awes-io/localization-helper/version.svg)](https://www.awes.io/)
+<h1 align="center">Localization Helper</h1>
 
-Package for convenient work with Laravel's localization features and fast language files generation. Take a look at [contributing.md](contributing.md) to see a to do list.
+<p align="center">Package for convenient work with Laravel's localization features and fast language files generation.</p>
+
+<p align="center">
+    <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields">
+        <img src="https://repo.pkgkit.com/4GBWO/awes-io/localization-helper/badges/master/coverage.svg" alt="Coverage report" >
+    </a>
+    <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields">
+        <img src="https://www.pkgkit.com/4GBWO/awes-io/localization-helper/version.svg" alt="Last version" >
+    </a>
+    <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields">
+        <img src="https://repo.pkgkit.com/4GBWO/awes-io/localization-helper/badges/master/build.svg" alt="Build status" >
+    </a>
+    <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields">
+        <img src="https://www.pkgkit.com/4GBWO/awes-io/localization-helper/downloads.svg" alt="Downloads" >
+    </a>
+    <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields">
+        <img src="https://img.shields.io/github/license/awes-io/localization-helper.svg" alt="License" />
+    </a>
+    <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields">
+        <img src="https://www.pkgkit.com/4GBWO/awes-io/localization-helper/status.svg" alt="CDN Ready" /> 
+    </a>
+    <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields" target="_blank">
+        <img src="https://static.pkgkit.com/badges/laravel.svg" alt="laravel" />
+    </a>
+    <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields">
+        <img src="https://img.shields.io/github/last-commit/awes-io/localization-helper.svg" alt="Last commit" />
+    </a>
+    <a href="https://github.com/awes-io/awes-io">
+        <img src="https://ga-beacon.appspot.com/UA-134431636-1/awes-io/repository" alt="Analytics" />
+    </a>
+    <a href="https://www.pkgkit.com/?utm_source=github&amp;utm_medium=shields">
+        <img src="https://www.pkgkit.com/badges/hosted.svg" alt="Hosted by Package Kit" />
+    </a>
+    <a href="https://www.patreon.com/join/awesdotio">
+        <img src="https://static.pkgkit.com/badges/patreon.svg" alt="Patreon" />
+    </a>
+</p>
+
+##
+<p align="center">
+    <img src="https://static.awes.io/github/localization-helper.gif" alt="Localization Helper" />
+</p>
 
 ## Installation
 
@@ -49,6 +90,10 @@ php artisan vendor:publish --provider="AwesIO\LocalizationHelper\LocalizationHel
 After that, `config/localizationhelper.php` will be created.
 
 ## Usage
+
+<p align="center">
+    <img src="https://static.awes.io/github/localization-helper.png" alt="Localization Helper" />
+</p>
 
 Package registers global helper function `_p($file_key, $default, $placeholders)`:
 
@@ -101,19 +146,20 @@ return [
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
+
 ## Testing
 
-``` bash
-$ composer test
+The coverage of the package is <a href="https://www.awes.io/?utm_source=github&amp;utm_medium=shields"><img src="https://repo.pkgkit.com/4GBWO/awes-io/localization-helper/badges/master/coverage.svg" alt="Coverage report"></a>.
+                                   
+You can run the tests with:
+
+```bash
+composer test
 ```
 
 ## Contributing
 
 Please see [contributing.md](contributing.md) for details and a todolist.
-
-## Security
-
-If you discover any security related issues, please email info@awescrm.de instead of using the issue tracker.
 
 ## Credits
 
