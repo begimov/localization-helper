@@ -20,6 +20,22 @@ class LocalizationHelper implements LocalizationHelperContract
 
         $this->translator = app('translator');
     }
+    
+    public function getUserLocalizationString($key, $placeholders)
+    {
+        if (\Illuminate\Support\Facades\Auth::check()) {
+
+            $translation = __(
+                $userKey = \Illuminate\Support\Facades\Auth::user()->name . '.' . $key, 
+                $placeholders
+            );
+
+            if ($translation != $userKey) {
+                return $translation;
+            }
+        }
+        return false;
+    }
 
     /**
      * Translate the given message
@@ -31,6 +47,10 @@ class LocalizationHelper implements LocalizationHelperContract
      */
     public function trans($key, $default = null, $placeholders = [])
     {
+        if ($userString = $this->getUserLocalizationString($key, $placeholders)) {
+            return $userString;
+        }
+        
         $translation = __($key, $placeholders);
         if (is_array($translation)) {
             return $key;
