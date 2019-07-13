@@ -1,5 +1,5 @@
 {
-    "name": "awes-io/localization-helper",
+    "name": "begimov/localization-helper",
     "description": "Package for convenient work with Laravel's localization features",
     "type": "library",
     "license": "MIT",
